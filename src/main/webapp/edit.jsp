@@ -1,68 +1,57 @@
 <%@ include file="./inc/top.jsp" %>
 
-<%
-    String id = request.getParameter("id");
-    // 예시 데이터, 실제 구현에서는 데이터베이스에서 데이터를 가져와야 합니다.
-    String title = "Sample Title " + id;
-    String writer = "Writer " + id;
-    int hit = 100 + Integer.parseInt(id); // 예시 데이터
-    String createdDate = "2024-10-" + (30 + Integer.parseInt(id)); // 예시 데이터
-    int rate = 8; // 예시 데이터
-    String description = "This is the existing description of post " + id; // 예시 데이터
-%>
-
 <html>
 <body>
 <div class="container">
-    <h4 class="mb-3">Edit Post</h4>
-    <form action="edit_ok.jsp" method="post">
-        <input type="hidden" name="id" value="<%= id %>">
-
+    <h4 class="mb-3">Add New Post</h4>
+    <form id="postForm" action="write_ok.jsp" method="post" class="needs-validation" novalidate>
         <div class="mb-3">
-            <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" name="title" value="<%= title %>" required>
+            <label for="title" class="mb-1">Title*</label>
+            <input type="text" class="form-control p-2" id="title" name="title" placeholder="Enter the title" required />
+            <div class="invalid-feedback">Please provide a title.</div>
         </div>
-
         <div class="mb-3">
-            <label for="writer">Writer</label>
-            <input type="text" class="form-control" id="writer" name="writer" value="<%= writer %>" required>
+            <label for="writer" class="mb-1">Writer</label>
+            <input type="text" class="form-control p-2" id="writer" name="writer" placeholder="Enter your name" required />
+            <div class="invalid-feedback">Please provide your name.</div>
         </div>
-
         <div class="mb-3">
-            <label for="hit">Hit</label>
-            <input type="number" class="form-control" id="hit" name="hit" value="<%= hit %>" required>
+            <label for="hit" class="mb-1">Hit</label>
+            <input type="number" class="form-control p-2" id="hit" name="hit" placeholder="Enter hit count" required />
+            <div class="invalid-feedback">Please provide a valid hit count.</div>
         </div>
-
         <div class="mb-3">
-            <label for="createdDate">Created Date</label>
-            <input type="text" class="form-control" id="createdDate" name="createdDate" value="<%= createdDate %>" required>
+            <label for="createdDate" class="mb-1">Created Date</label>
+            <input type="date" class="form-control p-2" id="createdDate" name="createdDate" required />
+            <div class="invalid-feedback">Please select a date.</div>
         </div>
-
         <div class="mb-3">
-            <label for="rate">Rate (1-10)</label>
-            <input type="number" class="form-control" id="rate" name="rate" min="1" max="10" value="<%= rate %>" required>
+            <label for="rate" class="mb-1">Rate (1-10)</label>
+            <input type="number" class="form-control p-2" id="rate" name="rate" min="1" max="10" placeholder="Enter a rate" required />
+            <div class="invalid-feedback">Please provide a rate between 1 and 10.</div>
         </div>
-
         <div class="mb-3">
             <label for="description">Description</label>
-            <textarea class="form-control" id="description" name="description" required><%= description %></textarea>
+            <textarea class="form-control" placeholder="Enter a description" id="description" name="description" style="height: 100px"></textarea>
+            <div class="invalid-feedback">Please provide a description.</div>
         </div>
-
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button class="btn btn-primary btn-lg btn-block mt-5 w-100" type="submit">Add</button>
     </form>
 </div>
 
-<!-- Footer -->
-<footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top bg-white">
-    <p class="col-md-4 mb-0 text-body-secondary">©2024 MyBoard, Inc</p>
-    <a href="list.jsp" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="https://cdn0.iconfinder.com/data/icons/social-reaction-and-emoji/519/happy-256.png" height="20" alt="Logo">
-    </a>
-    <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Privacy</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
-</footer>
+<script>
+    // Bootstrap custom validation script
+    (function () {
+        'use strict';
+        const form = document.getElementById('postForm');
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    })();
+</script>
 </body>
 </html>
