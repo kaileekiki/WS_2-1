@@ -12,7 +12,6 @@
     <list default="true" id="5609c741-3437-4e5f-95e4-fe8d55dab3fd" name="Changes" comment="ch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/form_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/form_ok.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Docker.Dockerfile: Compose Deployment.executor": "Run",
     "Docker.run_docker.executor": "Run",
+    "JavaScript Debug.form.html.executor": "Run",
     "Maven.jsppro [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -212,7 +212,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730685806309</updated>
       <workItem from="1730685807563" duration="37000" />
-      <workItem from="1730685849489" duration="12442000" />
+      <workItem from="1730685849489" duration="12943000" />
     </task>
     <task id="LOCAL-00001" summary="ch">
       <option name="closed" value="true" />
