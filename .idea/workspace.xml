@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609c741-3437-4e5f-95e4-fe8d55dab3fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jsppro/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jsppro/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cal.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/inc/top.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/war/jsppro-1.0-SNAPSHOT.war" afterDir="false" />
+    <list default="true" id="5609c741-3437-4e5f-95e4-fe8d55dab3fd" name="Changes" comment="ch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/form_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/form_ok.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +58,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.Dockerfile: Compose Deployment.executor": "Run",
+    "Docker.run_docker.executor": "Run",
     "Maven.jsppro [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,6 +81,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/war" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -174,6 +174,27 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="tomcat_container" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile: Compose Deployment" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.96" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -191,11 +212,24 @@
       <option name="presentableId" value="Default" />
       <updated>1730685806309</updated>
       <workItem from="1730685807563" duration="37000" />
-      <workItem from="1730685849489" duration="8654000" />
+      <workItem from="1730685849489" duration="12442000" />
     </task>
+    <task id="LOCAL-00001" summary="ch">
+      <option name="closed" value="true" />
+      <created>1731031558782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731031558782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ch" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch" />
   </component>
 </project>

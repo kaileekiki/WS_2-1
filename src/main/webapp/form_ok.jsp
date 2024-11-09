@@ -9,6 +9,8 @@
 <%
     String username = request.getParameter("username");
     String email = request.getParameter("email");
+    int age = request.getIntHeader("age");
+
 %>
 <html>
 <head>
@@ -16,6 +18,7 @@
 </head>
 <body>
 <%= username%>님의 이메일은 <%=email%> 입니다.
+<%= age%>
 
 </body>
 </html>
