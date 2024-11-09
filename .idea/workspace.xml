@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5609c741-3437-4e5f-95e4-fe8d55dab3fd" name="Changes" comment="ch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/war/jsppro-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsppro-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +83,7 @@
       <recent name="$PROJECT_DIR$/src/war" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -212,7 +213,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730685806309</updated>
       <workItem from="1730685807563" duration="37000" />
-      <workItem from="1730685849489" duration="12943000" />
+      <workItem from="1730685849489" duration="13891000" />
     </task>
     <task id="LOCAL-00001" summary="ch">
       <option name="closed" value="true" />
